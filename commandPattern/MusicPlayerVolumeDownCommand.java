@@ -1,0 +1,14 @@
+package commandPattern;
+
+public class MusicPlayerVolumeDownCommand implements Command {
+    private MusicPlayer musicPlayer;
+
+    public MusicPlayerVolumeDownCommand(MusicPlayer musicPlayer) {
+        this.musicPlayer = musicPlayer;
+    }
+
+    @Override
+    public String execute() {
+        return musicPlayer.decreaseVolume();
+    }
+}
