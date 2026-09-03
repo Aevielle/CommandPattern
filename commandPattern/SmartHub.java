@@ -3,7 +3,7 @@ package commandPattern;
 import java.util.HashMap;
 import java.util.Map;
 
-public class smartHub{
+public class SmartHub{
     private Map<String, Command> commands = new HashMap<>();
 
     public void setCommand(String label, Command command) {
